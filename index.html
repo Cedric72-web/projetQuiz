@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h2>Ajouter une question</h2>
+  <form id="quiz" class="quiz-form">
+    <label for="question">Posez votre question :
+      <input type="text" name="question">
+    </label>
+    <label for="question">Proposez la réponse A :
+      <input type="text" name="reponseA">
+    </label>
+    <label for="question">Proposez la réponse B :
+      <input type="text" name="reponseB">
+    </label>
+    <label for="question">Proposez la réponse C :
+      <input type="text" name="reponseC">
+    </label>
+    <label for="question">Quelle est la bonne réponse?
+      <input type="text" name="goodAnswer">
+    </label>
+    <button id="addButton" type="submit">Ajouter la question</button>
+  </form>
+
+  <section class="quiz">
+    <div class="quiz-title">
+      <h2>Quiz</h2>
+    </div>
+    <div class="question">
+      <div class="quiz-question">
+        <p id="question"class="question"></p>
+      </div>
+      <div class="quiz-answer">
+        <p id="reponseA"class='reponse'></p>
+        <p id="reponseB"class='reponse'></p>
+        <p id="reponseC"class='reponse'></p>
+      </div>
+    </div>
+  </section>
+  <script src="./quiz.js"></script>
+</body>
+</html>
